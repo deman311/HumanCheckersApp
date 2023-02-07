@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.BoardFragment">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:background="#FFC107"
+      android:layout_below="@id/game_fragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_margin="20dp"
+        android:background="#CDFFEB3B">
+
+      <TextView
+          android:id="@+id/pick_TXT_title"
+          android:layout_width="wrap_content"
+          android:layout_height="match_parent"
+          android:layout_centerInParent="true"
+          android:layout_marginTop="50dp"
+          android:textStyle="bold"
+          android:textColor="@color/black"
+          android:gravity="center_horizontal"
+          android:textAlignment="gravity"
+          android:text="Pick your hero"
+          android:textSize="30sp"></TextView>
+
+      <TextView
+          android:id="@+id/pick_TXT_heroname"
+          android:layout_width="250dp"
+          android:layout_height="50dp"
+          android:background="#FFF7C0"
+          android:layout_centerHorizontal="true"
+          android:layout_alignParentBottom="true"
+          android:gravity="center"
+          android:textAlignment="gravity"
+          android:textColor="@color/black"
+          android:text="The Warrior"
+          android:textSize="30sp"
+          android:textStyle="bold"></TextView>
+
+      <RelativeLayout
+          android:layout_width="300dp"
+          android:layout_height="500dp"
+          android:layout_centerInParent="true">
+        <ImageView
+            android:id="@+id/pick_IMG_heroimg"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"></ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="center">
+          <ImageButton
+              android:layout_weight="1"
+              android:id="@+id/pick_BTN_left"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/pick_arrow"
+              ></ImageButton>
+          <ImageButton
+              android:layout_weight="1"
+              android:id="@+id/pick_BTN_choice"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/pick_choice"
+              android:backgroundTint="#EBBD00"
+              ></ImageButton>
+          <ImageButton
+              android:layout_weight="1"
+              android:id="@+id/pick_BTN_right"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/pick_arrow"
+              android:rotationY="180"
+              ></ImageButton>
+        </LinearLayout>
+      </RelativeLayout>
+
+    </RelativeLayout>
+  </RelativeLayout>
+
+</FrameLayout>

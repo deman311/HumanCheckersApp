@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.BoardFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFC107"
+        android:layout_below="@id/game_fragment">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:background="#CDFFEB3B">
+
+            <ImageView
+                android:id="@+id/splash_IMG_logo"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/main_logo"></ImageView>
+
+            <ImageView
+                android:id="@+id/splash_IMG_img1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="50dp"
+                android:src="@drawable/chk_archer"></ImageView>
+
+            <ImageView
+                android:id="@+id/splash_IMG_img2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="50dp"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/chk_warrior"></ImageView>
+
+            <ImageView
+                android:id="@+id/splash_IMG_img3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="50dp"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/chk_ogre"></ImageView>
+
+            <ImageView
+                android:id="@+id/splash_IMG_img4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/chk_grim"></ImageView>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

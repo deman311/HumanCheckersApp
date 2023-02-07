@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "195408659012",
+    "project_id": "androidcoursefinalproject",
+    "storage_bucket": "androidcoursefinalproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:195408659012:android:8a4ab66013f9ec7d2c7211",
+        "android_client_info": {
+          "package_name": "com.example.humancheckers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "195408659012-s06vpi3glu5es5m0avkkr04opu3s4e69.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSgzONbTOHUE4Mu2z0rayazh2hcvMR5pQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "195408659012-mqfv1iljghs6ldv0180klq7vs2e0j7nv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

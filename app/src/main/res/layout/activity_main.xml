@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.GameActivity"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#FFC107">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_weight="3"
+            android:background="#CDFFEB3B">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_BTN_singleplayer"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_above="@id/main_BTN_multiplayer"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/teal_200"
+                android:text="SINGLEPLAYER"
+                android:textSize="20sp"></com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_BTN_multiplayer"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginBottom="50dp"
+                android:backgroundTint="@color/teal_200"
+                android:text="MULTIPLAYER"
+                android:textSize="20sp"></com.google.android.material.button.MaterialButton>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/main_BTN_leaderboards"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_below="@id/main_BTN_multiplayer"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/teal_200"
+                android:text="LEADERBOARD"
+                android:textSize="20sp"></com.google.android.material.button.MaterialButton>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/main_logo"
+        android:layout_alignParentBottom="true"></TextView>
+    <TextView
+        android:id="@+id/main_TXT_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Welcome [USERNAME]!"></TextView>
+
+</LinearLayout>

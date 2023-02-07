@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragments.BoardFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFC107"
+        android:layout_below="@id/game_fragment">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_margin="20dp"
+            android:background="#CDFFEB3B">
+
+            <TextView
+                android:id="@+id/board_TXT_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:text="Your Turn!"
+                android:textSize="30sp"></TextView>
+
+            <TextView
+                android:id="@+id/board_TXT_score"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:background="#FFF7C0"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:textAlignment="gravity"
+                android:textColor="@color/black"
+                android:text="0"
+                android:textSize="30sp"
+                android:textStyle="bold"></TextView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>
